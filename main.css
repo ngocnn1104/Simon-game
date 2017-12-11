@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body {
+	text-align: center;
+	background-image: url("https://blog.smartthings.com/wp-content/uploads/2014/10/rsz_1music-equalizer-wallpaper-3840x2400.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: 'Dosis', sans-serif;
+}
+
+.outerCircle {
+	box-sizing: border-box;
+	height: 500px;
+	width: 500px;
+	border: solid 10px #333333;
+	border-radius: 50%;
+	margin: 40px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.innerCircle {
+	box-sizing: border-box;
+	height: 250px;
+	width: 250px;
+	border: solid thick #333333;
+	border-radius: 50%;
+	margin: 115px 115px;
+	position: absolute;
+	background-color: #ece7ee;
+}
+
+.topLeft, .topRight, .botLeft, .botRight {
+	height: 250px;
+	width: 250px;
+	border: solid thick #333333;
+	position: absolute;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.topLeft {
+	margin-left: -10px;
+	margin-top: -10px;
+	background-color: #55a84b;
+}
+
+.topRight {
+	margin-left: 240px;
+	background-color: yellow;
+	margin-top: -10px;
+	background-color: #a02820;
+}
+
+.botLeft {
+	margin-top: 240px;
+	margin-left: -10px;
+	background-color: #cca728;
+}
+
+.botRight {
+	margin-left: 240px;
+	margin-top: 240px;
+	background-color: #0a4a8f;
+}
+
+.count {
+	border: groove #333333;
+	height: 30px;
+	width: 50px;
+	margin: 0px auto;
+	margin-bottom: 30px;
+	font-size: 20px;
+	padding-top: 8px;
+	border-radius: 20%;
+	letter-spacing: 2px;
+	background-color: black;
+	color: brown;
+}
+
+.countText {
+	margin-bottom: 0px;
+}
+
+p {
+	margin-top: 25px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+	margin-top: 20px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.onOff {
+	position: relative;
+	top: -10px;
+	padding: 5px 5px;
+}
+
+i {
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+h1, footer {
+	color: white;
+}
+
+h1 {
+	font-size: 50px;
+	letter-spacing: 3px;
+}
