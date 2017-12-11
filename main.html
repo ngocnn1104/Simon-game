@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Simon Game</title>
+    <link href="main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>SIMON GAME</h1>
+    <div class="outerCircle">
+        <div class="corners">
+            <div class="topLeft"></div>
+            <div class="topRight"></div>
+            <div class="botLeft"></div>
+            <div class="botRight"></div>
+        </div>
+        <div class="innerCircle">
+            <p class="countText">COUNT</p>
+            <p class="count">--</p>
+            <span>Strict Mode</span><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+            <div class="toggleSwitch">
+                <span class="onOff">Stop</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span class="onOff">Start</span>
+            </div>
+        </div>
+    </div>
+    
+    <footer>Coded by Ngoc Nguyen &copy; 2017</footer>
+    
+    <audio class="audio1">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg" />
+    </audio>
+    
+    <audio class="audio2">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg" />
+    </audio>
+    
+    <audio class="audio3">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg" />
+    </audio>
+    
+    <audio class="audio4">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg" />
+    </audio>
+    
+    <audio class="wrong">
+        <source src="https://www.soundjay.com/misc/fail-buzzer-02.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
